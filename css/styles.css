@@ -1,7 +1,71 @@
+:root {
+    --background-main-color: #FAFAFA;
+    --color-black: #111111;
+    --color-text-white: rgba(255, 255, 255, 0.70);
+    --color-text-balck: rgba(17, 17, 17, 0.70);
+    --background-color: #1E1823;
+    --main-color: #FD9222;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--background-main-color-color);
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1136px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0 32px;
+}
+
+.section {
+    margin-bottom: 128px;
+}
+
 .logo {
-    color: #111111;
+    color: var(--color-black);
     text-transform: uppercase;
 }
+
 .nav-link {
-    color: #111111;
+    color: var(--color-black);
 }
