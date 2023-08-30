@@ -5,11 +5,14 @@
     --color-text-balck: rgba(17, 17, 17, 0.70);
     --background-color: #1E1823;
     --main-color: #FD9222;
+    --hover-effect: #FCF1E0;
 }
 
+/* ================= BASE ================= */
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--background-main-color-color);
+    font-size: 14px;
 }
 
 ul {
@@ -28,11 +31,11 @@ h1, h2, h3, h4, p {
     margin-bottom: 0;
 }
 
-img {
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -49,7 +52,7 @@ img {
 }
 
 .container {
-    width: 1136px;
+    width: 1158px;
 
     margin-left: auto;
     margin-right: auto;
@@ -61,11 +64,102 @@ img {
     margin-bottom: 128px;
 }
 
+/* ================= END BASE ================= */
+
+/* ================= HEADER SECTION ================= */
+.head-block {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 28px;
+    padding-bottom: 36px;
+}
+
+.site-nav {
+    display: flex;
+
+}
+
 .logo {
     color: var(--color-black);
     text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+
+    margin-right: 188px;
+}
+
+.accent {
+    font-style: italic;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
 }
 
 .nav-link {
     color: var(--color-black);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
 }
+
+.social-link {
+    display: flex;
+    gap: 18px;
+}
+
+/* ================= END HEADER SECTION ================= */
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    margin-bottom: 72px;
+}
+
+.hero-block {
+    max-width: 1136px;
+    height: 600px;
+    background-color: var(--background-color);
+    background-image: url(../images/img-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+
+    padding-top: 381px;
+}
+
+.hero-tittle {
+    color: var(--color-text-white);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    padding-bottom: 32px;
+}
+
+.main-btn {
+    border-radius: 100px;
+    background: var(--main-color);
+    padding: 14px 40px;
+    border: none;
+
+    color: var(--color-text-white);
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--hover-effect);
+    color: var(--main-color);
+}
+
+.main-btn-link {}
+
+/* ================= END HERO SECTION ================= */
