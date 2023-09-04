@@ -36,11 +36,11 @@ h1, h2, h3, h4, p {
     margin-bottom: 0;
 }
 
-/* img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-} */
+}
 
 .visually-hidden {
     position: absolute;
@@ -76,33 +76,39 @@ h1, h2, h3, h4, p {
     display: flex;
     justify-content: space-between;
 
-    padding-top: 28px;
-    padding-bottom: 36px;
+    padding-top: 24px;
+    padding-bottom: 32px;
 }
 
 .site-nav {
     display: flex;
+    align-items: center;
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+
     color: var(--color-black);
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: -0.03em;
-
     margin-right: 188px;
+}
+
+.logo .icon {
+    margin-left: 5px;
 }
 
 .accent {
     font-style: italic;
+    padding-right: 5px;
 }
 
 .nav-list {
     display: flex;
-    align-items: center;
-
     gap: 24px;
 }
 
@@ -113,9 +119,23 @@ h1, h2, h3, h4, p {
     letter-spacing: -0.02em;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--main-color);
+}
+
 .social-link {
     display: flex;
+    align-items: center;
     gap: 18px;
+}
+
+.social-link .icon {
+    vertical-align: middle;
+}
+
+.social-link .icon:hover {
+    fill: var(--main-color);
 }
 
 /* ================= END HEADER SECTION ================= */
@@ -186,6 +206,9 @@ h1, h2, h3, h4, p {
 }
 
 .scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     color: var(--color-white);
     font-weight: 500;
@@ -193,4 +216,97 @@ h1, h2, h3, h4, p {
     letter-spacing: -0.03em;
 }
 
+.block-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-main-color);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+
+    margin-left: 14px;
+}
+
+.scroll .icon {
+    fill: var(--main-color);
+}
+
+.scroll:hover {
+    color: var(--main-color);
+}
+
+.scroll:hover .block-icon {
+    background-color: var(--main-color);
+}
+
+.scroll:hover .icon {
+    fill: var(--hover-effect);
+}
+
 /* ================= END HERO SECTION ================= */
+
+/* ================= BENEFITS SECTION ================= */
+
+.benefits {
+    background-color: var(--background-color);
+}
+
+.benefits-block {
+    display: flex;
+    gap: 85px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.benefit-item {
+    position: relative;
+    flex-basis: calc((100% - 170px) / 3);
+}
+
+.benefit-item .block-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 62px;
+    height: 62px;
+    background-color: transparent;
+
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+
+    margin-bottom: 22px;
+}
+
+.benefit-title {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+
+    margin-bottom: 18px;
+}
+
+.benefit-text {
+    color: var(--color-text-white);
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+
+.benefit-item:not(:last-child)::before {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.50);
+    ;
+    width: 1px;
+    height: 124px;
+}
+
+/* ================= END BENEFITS SECTION ================= */

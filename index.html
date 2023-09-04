@@ -22,11 +22,9 @@
         <nav class="site-nav">
           <a class="logo" href="./index.html">
             <span class="accent">Simply</span> chocolate
-            <img
-              src="./images/icons/chocolate.svg"
-              alt="Simply Chocolate logo"
-              width="24"
-            />
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons/icons.svg#chocolate"></use>
+            </svg>
           </a>
 
           <ul class="nav-list">
@@ -48,28 +46,22 @@
           </ul>
         </nav>
 
-        <div>
-          <ul class="social-link">
-            <li>
-              <a href="">
-                <img
-                  src="./images/icons/instagram.svg"
-                  alt="instagram logo"
-                  width="24"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="./images/icons/twitter.svg"
-                  alt="twitter logo"
-                  width="24"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="social-link">
+          <li>
+            <a href="">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -88,36 +80,44 @@
 
             <a class="scroll" href="#"
               >scroll down
-              <img src="./images/icons/arrow.svg" alt="" />
+              <div class="block-icon">
+                <svg class="icon" width="22" height="22">
+                  <use href="./images/icons/icons.svg#arrow"></use>
+                </svg>
+              </div>
             </a>
           </div>
         </div>
       </section>
 
       <!-- Benefits section -->
-      <section class="section">
+      <section class="section benefits">
         <!-- TODO: hide this h2 -->
         <div class="container">
           <h2 class="visually-hidden">Benefits section</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/icons/chocolate-bar.svg"
-                alt="chocolate"
-                width="32"
-              />
-              <h3>Unsurpassed taste</h3>
-              <p>
+          <ul class="benefits-block">
+            <li class="benefit-item">
+              <div class="block-icon">
+                <svg class="icon" width="32" height="32">
+                  <use href="./images/icons/icons.svg#chocolate-bar"></use>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Unsurpassed taste</h3>
+              <p class="benefit-text">
                 Crafted with the finest quality cocoa beans and a dedication to
                 perfection, each bite is a decadent experience that simply
                 cannot be matched. Savor the richness and complexity of our
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
-              <img src="./images/icons/Coin.svg" alt="coin" width="32" />
-              <h3>Affordable price</h3>
-              <p>
+            <li class="benefit-item">
+              <div class="block-icon">
+                <svg class="icon" width="32" height="32">
+                  <use href="./images/icons/icons.svg#oin"></use>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Affordable price</h3>
+              <p class="benefit-text">
                 Indulge in high-quality chocolate without breaking the bank with
                 Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
@@ -125,10 +125,14 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
-              <img src="./images/icons/spoon.svg" alt="spoon" width="32" />
-              <h3>Own production</h3>
-              <p>
+            <li class="benefit-item">
+              <div class="block-icon">
+                <svg class="icon" width="32" height="32">
+                  <use href="./images/icons/icons.svg#spoon"></use>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Own production</h3>
+              <p class="benefit-text">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
                 finest ingredients to handcrafting each piece, our attention to
