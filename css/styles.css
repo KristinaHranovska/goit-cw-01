@@ -108,7 +108,7 @@ img {
     margin-left: 5px;
 }
 
-.accent {
+.accent-logo {
     font-style: italic;
 }
 
@@ -346,12 +346,13 @@ img {
     letter-spacing: -0.03em;
     text-transform: uppercase;
 
-    margin-bottom: 28px;
+    text-align: center;
+
+    margin-bottom: 50px;
 }
 
-.taste-discription .accent {
+.accent {
     color: var(--main-color);
-    font-style: normal;
 }
 
 .main-text {
@@ -476,3 +477,76 @@ img {
 }
 
 /* ================= END TASTE SECTION ================= */
+
+/* ================= Video SECTION ================= */
+
+
+
+.video-inner {
+    display: flex;
+    gap: 20px;
+}
+
+.video-media {
+    position: relative;
+    flex-basis: calc((100% - 20px) / 2);
+}
+
+.video-background {
+    object-fit: cover;
+    height: 100%;
+
+    border-radius: 15px;
+}
+
+.video-bth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    border: none;
+    background-color: transparent;
+}
+
+.video-content {
+    flex-basis: calc((100% - 20px) / 2);
+    padding: 32px;
+
+    background-color: var(--color-white);
+    border-radius: 15px;
+}
+
+.video-text {
+    color: var(--color-black);
+
+    font-size: 18px;
+
+    font-weight: 600;
+    line-height: 1.33;
+
+    margin-bottom: 28px;
+}
+
+.video-item {
+    position: relative;
+
+    color: var(--color-black);
+    font-size: 14px;
+    letter-spacing: -0.02em;
+
+    padding-left: 16px;
+}
+
+.video-item:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+.icon-dot {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+/* ================= END Video  SECTION ================= */
