@@ -17,57 +17,57 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container head-block">
-        <nav class="site-nav">
-          <a class="logo" href="./index.html">
-            <span class="accent">Simply</span> chocolate
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons/icons.svg#chocolate"></use>
-            </svg>
-          </a>
-
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home</a>
+    <header class="header">
+      <div class="container">
+        <div class="head-block">
+          <nav class="site-nav">
+            <a class="logo" href="./index.html">
+              <span class="accent">Simply</span> chocolate
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#chocolate"></use>
+              </svg>
+            </a>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How it’s made?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Top sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="social-link">
+            <li>
+              <a href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How it’s made?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Top sellers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chocolate is loved</a>
+            <li>
+              <a href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="social-link">
-          <li>
-            <a href="">
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <svg class="icon" width="24" height="24">
-                <use href="./images/icons/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <section class="hero ">
         <div class="container hero-block">
           <h1 class="hero-tittle">
             Treat yourself or a loved one to <br />
@@ -91,107 +91,173 @@
       </section>
 
       <!-- Benefits section -->
-      <section class="section benefits">
+      <section class="section">
         <!-- TODO: hide this h2 -->
-        <div class="container">
-          <h2 class="visually-hidden">Benefits section</h2>
-          <ul class="benefits-block">
-            <li class="benefit-item">
-              <div class="block-icon">
-                <svg class="icon" width="32" height="32">
-                  <use href="./images/icons/icons.svg#chocolate-bar"></use>
-                </svg>
-              </div>
-              <h3 class="benefit-title">Unsurpassed taste</h3>
-              <p class="benefit-text">
-                Crafted with the finest quality cocoa beans and a dedication to
-                perfection, each bite is a decadent experience that simply
-                cannot be matched. Savor the richness and complexity of our
-                Unsurpassed Taste and discover a new level of chocolate bliss.
-              </p>
-            </li>
-            <li class="benefit-item">
-              <div class="block-icon">
-                <svg class="icon" width="32" height="32">
-                  <use href="./images/icons/icons.svg#oin"></use>
-                </svg>
-              </div>
-              <h3 class="benefit-title">Affordable price</h3>
-              <p class="benefit-text">
-                Indulge in high-quality chocolate without breaking the bank with
-                Simply Chocolate's selection of affordable treats. Enjoy
-                mouth-watering truffles and velvety chocolate bars without
-                sacrificing taste or quality. Browse our selection and indulge
-                in affordable luxury today.
-              </p>
-            </li>
-            <li class="benefit-item">
-              <div class="block-icon">
-                <svg class="icon" width="32" height="32">
-                  <use href="./images/icons/icons.svg#spoon"></use>
-                </svg>
-              </div>
-              <h3 class="benefit-title">Own production</h3>
-              <p class="benefit-text">
-                We take pride in our own production process, ensuring that every
-                step is carefully crafted to perfection. From selecting the
-                finest ingredients to handcrafting each piece, our attention to
-                detail is evident in every bite.
-              </p>
-            </li>
-          </ul>
+          <div class="benefits">
+            <div class="container">
+              <h2 class="visually-hidden">Benefits section</h2>
+              <ul class="benefits-block">
+                <li class="benefit-item">
+                  <div class="block-icon">
+                    <svg class="icon" width="32" height="32">
+                      <use href="./images/icons/icons.svg#chocolate-bar"></use>
+                    </svg>
+                  </div>
+                  <h3 class="benefit-title">Unsurpassed taste</h3>
+                  <p class="benefit-text">
+                    Crafted with the finest quality cocoa beans and a dedication
+                    to perfection, each bite is a decadent experience that simply
+                    cannot be matched. Savor the richness and complexity of our
+                    Unsurpassed Taste and discover a new level of chocolate bliss.
+                  </p>
+                </li>
+                <li class="benefit-item">
+                  <div class="block-icon">
+                    <svg class="icon" width="32" height="32">
+                      <use href="./images/icons/icons.svg#oin"></use>
+                    </svg>
+                  </div>
+                  <h3 class="benefit-title">Affordable price</h3>
+                  <p class="benefit-text">
+                    Indulge in high-quality chocolate without breaking the bank
+                    with Simply Chocolate's selection of affordable treats. Enjoy
+                    mouth-watering truffles and velvety chocolate bars without
+                    sacrificing taste or quality. Browse our selection and indulge
+                    in affordable luxury today.
+                  </p>
+                </li>
+                <li class="benefit-item">
+                  <div class="block-icon">
+                    <svg class="icon" width="32" height="32">
+                      <use href="./images/icons/icons.svg#spoon"></use>
+                    </svg>
+                  </div>
+                  <h3 class="benefit-title">Own production</h3>
+                  <p class="benefit-text">
+                    We take pride in our own production process, ensuring that
+                    every step is carefully crafted to perfection. From selecting
+                    the finest ingredients to handcrafting each piece, our
+                    attention to detail is evident in every bite.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Taste section -->
       <section class="section">
         <div class="container">
-          <h2>
-            It all adds up to one <br />
-            expeptional taste sensation
-          </h2>
-          <p>
-            At Simply Chocolate, we believe that the secret to exceptional
-            chocolate is in the details. From the sourcing of the finest
-            ingredients to the careful crafting of each individual piece, every
-            step of our process adds up to one exceptional taste sensation.
-          </p>
-          <ul>
-            <li>
+          <div class="taste-discription">
+            <h2 class="main-title">
+              It all adds up to one <br />
+              expeptional <span class="accent">taste</span> sensation
+            </h2>
+            <p class="main-text">
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+          </div>
+          <ul class="taste-list">
+            <li class="taste-item">
               <img
+                class="taste-img"
                 src="./images/ingridients/milk-chocolete.webp"
                 alt="milk chocolate"
                 width="206"
                 height="160"
               />
-              <h3>Milk chocolate</h3>
+              <h3 class="taste-title">Milk chocolate</h3>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-btn">
+                  <button class="overlay-btn-orange">chocolate</button>
+                  <button class="overlay-btn-white">the benefits</button>
+                </div>
+                <p class="overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="taste-item">
               <img
+                class="taste-img"
                 src="./images/ingridients/milk.webp"
                 alt="milk"
                 width="206"
                 height="160"
               />
-              <h3>Milk</h3>
+              <h3 class="taste-title">Milk</h3>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-btn">
+                  <button class="overlay-btn-orange">chocolate</button>
+                  <button class="overlay-btn-white">the benefits</button>
+                </div>
+                <p class="overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="taste-item">
               <img
+                class="taste-img"
                 src="./images/ingridients/nuts.webp"
                 alt="nuts"
                 width="206"
                 height="160"
               />
-              <h3>Nuts</h3>
+              <h3 class="taste-title">Nuts</h3>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-btn">
+                  <button class="overlay-btn-orange">chocolate</button>
+                  <button class="overlay-btn-white">the benefits</button>
+                </div>
+                <p class="overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
-            <li>
+            <li class="taste-item">
               <img
+                class="taste-img"
                 src="./images/ingridients/semi-chocolate.webp"
                 alt="semi chocolate"
                 width="206"
                 height="160"
               />
-              <h3>Semi - sweet chocolate</h3>
+              <h3 class="taste-title">Semi chocolate</h3>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-btn">
+                  <button class="overlay-btn-orange">chocolate</button>
+                  <button class="overlay-btn-white">the benefits</button>
+                </div>
+                <p class="overlay-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
