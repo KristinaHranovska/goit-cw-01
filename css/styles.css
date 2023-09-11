@@ -160,7 +160,7 @@ img {
 .hero-block {
     max-width: 1136px;
     background-color: var(--background-color);
-    background-image: url(../images/img-background.jpg), linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/img-background.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -492,6 +492,7 @@ img {
 }
 
 .video-background {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), lightgray -10.819px -343.839px / 103.473% 236.295% no-repeat;
     object-fit: cover;
     height: 100%;
 
@@ -664,6 +665,10 @@ img {
 
 /* ================= FEEDBACK SECTION ================= */
 
+.subscribe-section {
+    padding-top: 64px;
+}
+
 .feedback-thumb .main-title {
     margin-bottom: 100px;
 }
@@ -688,17 +693,26 @@ img {
     margin-bottom: 31px;
 }
 
+.feedback-image {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+}
+
 .feedback-inner {
     text-align: center;
     padding: 56px 24px 26px;
 }
 
-.feedback-image {
-    position: absolute;
-    top: -50%;
-    left: 50%;
+.feedback-title {
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
 
-    transform: translate(-50%, 50%);
+    margin-bottom: 24px;
 }
 
 .feedback-inner .main-text {
@@ -727,3 +741,42 @@ img {
 }
 
 /* ================= END FEEDBACK SECTION ================= */
+
+/* ================= SUBSCRIBE SECTION ================= */
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+
+    max-width: 1200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/subcribe-background.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 72px 0;
+}
+
+.subscribe-container {
+    max-width: 467px;
+    text-align: center;
+}
+
+.subscribe-title {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 24px;
+}
+
+.subscribe-container .main-text {
+    color: var(--color-white);
+
+    margin-bottom: 24px;
+}
+
+/* ================= END SUBSCRIBE SECTION ================= */
