@@ -14,6 +14,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -337,130 +347,137 @@
           <h2 class="main-title" id="products">
             Our <span class="accent">products</span>
           </h2>
-          <ul class="products-list">
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/orange.jpg"
-                alt="chocolate with orange"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Orange</h3>
-                <p class="product-text">Dark chocolate</p>
-                <button class="product-price" type="button">45 UAH</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/apple-cranberry.jpg"
-                alt="chocolate with apple and cranberry"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Apple&Cranberry</h3>
-                <p class="product-text">Milk chocolate</p>
-                <button class="product-price">50 UAH</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/lime-seasalt.jpg"
-                alt="chocolate with lime and seasalt"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Lime&Seasalt</h3>
-                <p class="product-text">Dark chocolate</p>
-                <button class="product-price">66 UAH</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/pineapple.jpg"
-                alt="chocolate with pineapple"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Pineapple</h3>
-                <p class="product-text">Milk chocolate</p>
-                <button class="product-price">54 UAH</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/classic-milk.jpg"
-                alt="chocolate with pineapple"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Classic</h3>
-                <p class="product-text">Milk chocolate</p>
-                <button class="product-price">45 UAN</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/honey.jpg"
-                alt="chocolate with pineapple"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Honey</h3>
-                <p class="product-text">Milk chocolate</p>
-                <button class="product-price">50 UAN</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/roasted-fruits.jpg"
-                alt="chocolate with pineapple"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Roasted fruits</h3>
-                <p class="product-text">Dark chocolate</p>
-                <button class="product-price">66 UAN</button>
-              </div>
-            </li>
-            <li class="product-item">
-              <img
-                class="product-image"
-                src="./images/products/classic-white.jpg"
-                alt="chocolate with pineapple"
-                width="230"
-                height="201"
-              />
-              <div class="product-thumb">
-                <h3 class="product-name">Classic</h3>
-                <p class="product-text">White chocolate</p>
-                <button class="product-price">54 UAN</button>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper-container">
+            <div class="btn-swiper">
+              <button class="main-btn swiper-button-prev">left</button>
+              <button class="main-btn swiper-button-next">right</button>
+            </div>
+            <ul class="products-list">
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/orange.jpg"
+                  alt="chocolate with orange"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Orange</h3>
+                  <p class="product-text">Dark chocolate</p>
+                  <button class="product-price" type="button">45 UAH</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/apple-cranberry.jpg"
+                  alt="chocolate with apple and cranberry"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Apple&Cranberry</h3>
+                  <p class="product-text">Milk chocolate</p>
+                  <button class="product-price">50 UAH</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/lime-seasalt.jpg"
+                  alt="chocolate with lime and seasalt"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Lime&Seasalt</h3>
+                  <p class="product-text">Dark chocolate</p>
+                  <button class="product-price">66 UAH</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/pineapple.jpg"
+                  alt="chocolate with pineapple"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Pineapple</h3>
+                  <p class="product-text">Milk chocolate</p>
+                  <button class="product-price">54 UAH</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/classic-milk.jpg"
+                  alt="chocolate with pineapple"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Classic</h3>
+                  <p class="product-text">Milk chocolate</p>
+                  <button class="product-price">45 UAN</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/honey.jpg"
+                  alt="chocolate with pineapple"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Honey</h3>
+                  <p class="product-text">Milk chocolate</p>
+                  <button class="product-price">50 UAN</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/roasted-fruits.jpg"
+                  alt="chocolate with pineapple"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Roasted fruits</h3>
+                  <p class="product-text">Dark chocolate</p>
+                  <button class="product-price">66 UAN</button>
+                </div>
+              </li>
+              <li class="product-item">
+                <img
+                  class="product-image"
+                  src="./images/products/classic-white.jpg"
+                  alt="chocolate with pineapple"
+                  width="230"
+                  height="201"
+                />
+                <div class="product-thumb">
+                  <h3 class="product-name">Classic</h3>
+                  <p class="product-text">White chocolate</p>
+                  <button class="product-price">54 UAN</button>
+                </div>
+              </li>
+            </ul>
 
-          <ul class="slider-dots">
-            <li class="active"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-          </ul>
+            <ul class="product-slider-dots">
+              <li class="dot" id="dot1"></li>
+              <li class="dot" id="dot2"></li>
+              <li class="dot" id="dot3"></li>
+              <li class="dot" id="dot4"></li>
+              <li class="dot" id="dot5"></li>
+              <li class="dot" id="dot6"></li>
+              <li class="dot" id="dot7"></li>
+              <li class="dot" id="dot8"></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -518,115 +535,140 @@
             <h2 class="main-title" id="feedback">
               <span class="accent">Chocolate</span> is loved
             </h2>
-            <ul class="feedback-list">
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo1.webp"
-                  alt="woman"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Victoria Dobrzhanska</h3>
-                  <p class="main-text">
-                    I love this chocolate bar. Perfect combination of light
-                    crispy wafer, covered in a thin layer chocolate.
-                  </p>
-                </div>
-              </li>
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo2.webp"
-                  alt="man"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Nazar Babenko</h3>
-                  <p class="main-text">
-                    This chocolate confection is a delight! A delight! The wafer
-                    is light and crisp, the hazelnut cream is smooth, and the
-                    chocolate is good.
-                  </p>
-                </div>
-              </li>
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo3.webp"
-                  alt="woman"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Olena Kampusch</h3>
-                  <p class="main-text">
-                    Chocolate is a family favourite treat. Love the delicious
-                    smooth chocolate and the creaminess inside. The wafer is
-                    soft but crunchy.
-                  </p>
-                </div>
-              </li>
+            <div class="swiper-container">
+              <div class="btn-swiper">
+                <button class="main-btn swiper-feedback-button-prev">
+                  left
+                </button>
+                <button class="main-btn swiper-feedback-button-next">
+                  right
+                </button>
+              </div>
+              <ul class="feedback-list">
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo1.webp"
+                      alt="woman"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Victoria Dobrzhanska</h3>
+                      <p class="main-text">
+                        I love this chocolate bar. Perfect combination of light
+                        crispy wafer, covered in a thin layer chocolate. A real
+                        pleasure.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo2.webp"
+                      alt="man"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Nazar Babenko</h3>
+                      <p class="main-text">
+                        This chocolate confection is a delight! A delight! The
+                        wafer is light and crisp, the hazelnut cream is smooth,
+                        and the chocolate is good.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo3.webp"
+                      alt="woman"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Olena Kampusch</h3>
+                      <p class="main-text">
+                        Chocolate is a family favourite treat. Love the
+                        delicious smooth chocolate and the creaminess inside.
+                        The wafer is soft but crunchy.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo4.webp"
+                      alt="woman"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Natalia Sus</h3>
+                      <p class="main-text">
+                        The chocolate assortment was delicious. Both dark and
+                        milk chocolate pieces were smooth and just right on the
+                        sweetness level.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo5.webp"
+                      alt="woman"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Danilo Nottingham</h3>
+                      <p class="main-text">
+                        This is delicious. It so rich and flavorful you don’t
+                        need to use as many. I love topping an apple with almond
+                        butter and these chips for a snack.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="feedback-item">
+                  <div class="feedback-card">
+                    <img
+                      class="feedback-image"
+                      src="./images/reviews/photo6.webp"
+                      alt="woman"
+                      width="80"
+                      height="80"
+                    />
+                    <div class="feedback-inner">
+                      <h3 class="feedback-title">Irina Tydnyuk</h3>
+                      <p class="main-text">
+                        This is simply the best chocolate around, and I'm just
+                        thrilled to support a local company! Best local
+                        chocolate - world class :)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo4.webp"
-                  alt="woman"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Natalia Sus</h3>
-                  <p class="main-text">
-                    The chocolate assortment was delicious. Both dark and milk
-                    chocolate pieces were smooth and just right on the sweetness
-                    level.
-                  </p>
-                </div>
-              </li>
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo5.webp"
-                  alt="woman"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Danilo Nottingham</h3>
-                  <p class="main-text">
-                    This is delicious. It so rich and flavorful you don’t need
-                    to use as many. I love topping an apple with almond butter
-                    and these chips for a snack.
-                  </p>
-                </div>
-              </li>
-              <li class="feedback-item">
-                <img
-                  class="feedback-image"
-                  src="./images/reviews/photo6.webp"
-                  alt="woman"
-                  width="80"
-                  height="80"
-                />
-                <div class="feedback-inner">
-                  <h3 class="feedback-title">Irina Tydnyuk</h3>
-                  <p class="main-text">
-                    This is simply the best chocolate around, and I'm just
-                    thrilled to support a local company! Best local chocolate -
-                    world class :)
-                  </p>
-                </div>
-              </li>
-            </ul>
-            <ul class="slider-dots">
-              <li class="active"></li>
-              <li class="dot"></li>
-              <li class="dot"></li>
-              <li class="dot"></li>
+            <ul class="feedback-slider-dots">
+              <li class="dot" id="dot1"></li>
+              <li class="dot" id="dot2"></li>
+              <li class="dot" id="dot3"></li>
+              <li class="dot" id="dot4"></li>
+              <li class="dot" id="dot5"></li>
+              <li class="dot" id="dot6"></li>
             </ul>
             <button class="feedback-btn" type="button">Leave a review</button>
           </div>
@@ -716,5 +758,14 @@
         </nav>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
