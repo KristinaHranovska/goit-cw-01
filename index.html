@@ -88,7 +88,7 @@
             <button class="main-btn" type="button">Buy now</button>
             <a class="main-btn-link" href="#">How it’s made</a>
 
-            <a class="scroll" href="#"
+            <a class="scroll" href="#subscribe"
               >scroll down
               <div class="block-icon">
                 <svg class="icon" width="22" height="22">
@@ -570,8 +570,8 @@
                       <h3 class="feedback-title">Victoria Dobrzhanska</h3>
                       <p class="main-text">
                         I love this chocolate bar. Perfect combination of light
-                        crispy wafer, covered in a thin layer chocolate. A real
-                        pleasure.
+                        crispy wafer, covered in a thin layer chocolate. It is a
+                        real pleasure.
                       </p>
                     </div>
                   </div>
@@ -692,7 +692,7 @@
         <div class="">
           <div class="subscribe">
             <div class="subscribe-container">
-              <h2 class="subscribe-title">
+              <h2 class="subscribe-title" id="subscribe">
                 Explore our new <br />
                 chocolate first
               </h2>
@@ -702,7 +702,9 @@
                 Made with only the finest ingredients and handcrafted with the
                 utmost care, each piece is a work of art that is sure to please.
               </p>
-              <button class="main-btn" type="button">Subscribe</button>
+              <button class="main-btn" data-modal-open type="button">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
@@ -771,13 +773,39 @@
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!----------- subscribe modal ------------>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="close-icon" width="25" height="25">
+            <use href="./images/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+
+        <div class="subscribe-form">
+          <h2 class="main-title">
+            Explore our <br />
+            <span class="accent">new chocolate</span> first!
+          </h2>
+          <form>
+            <input
+              class="subscribe-input"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+            />
+            <button class="main-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
-
     <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

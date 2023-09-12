@@ -1,4 +1,5 @@
- $(document).ready(function () {
+// slider for products
+$(document).ready(function () {
         const productsList = $('.products-list');
 
         productsList.on('afterChange', function (event, slick, currentSlide) {
@@ -38,7 +39,7 @@
         });
  });
       
-
+// slider for feedback
   $(document).ready(function () {
         const feedbackList = $('.feedback-list');
 
@@ -77,4 +78,21 @@
           const index = $(this).index();
           feedbackList.slick('slickGoTo', index);
         });
-      });
+  });
+      
+
+  // script to make a modal window appear
+  (() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
