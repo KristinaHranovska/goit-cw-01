@@ -557,6 +557,25 @@ img {
     margin-bottom: 20px;
 }
 
+.arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+
+    width: 30px;
+    height: 30px;
+}
+
+.arrow-btn:hover,
+.arrow-btn:focus {
+    background-color: var(--main-color);
+    fill: var(--hover-effect);
+}
+
 .main-btn:hover,
 .main-btn:focus {
     background-color: var(--hover-effect);
