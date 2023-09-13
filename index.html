@@ -57,14 +57,14 @@
           </nav>
           <ul class="social-link">
             <li>
-              <a href="">
+              <a href="" target="_blank">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons/icons.svg#twitter"></use>
                 </svg>
@@ -85,8 +85,10 @@
             of pure delight!
           </h1>
           <div class="bth-block">
-            <button class="main-btn" type="button">Buy now</button>
-            <a class="main-btn-link" href="#">How it’s made</a>
+            <button class="main-btn" type="button" data-buy-open>
+              Buy now
+            </button>
+            <a class="main-btn-link" href="#video-section">How it’s made</a>
 
             <a class="scroll" href="#subscribe"
               >scroll down
@@ -531,7 +533,9 @@
               and was first discovered by the Native American tribe called the
               Mayans.
             </p>
-            <button class="main-btn" type="button">Buy now</button>
+            <button class="main-btn" type="button" data-buy-add-open>
+              Buy now
+            </button>
           </div>
         </div>
       </section>
@@ -743,14 +747,14 @@
           </address>
           <ul class="social-link">
             <li>
-              <a href="">
+              <a href="" target="_blank">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" target="_blank">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons/icons.svg#twitter"></use>
                 </svg>
@@ -846,16 +850,141 @@
             Explore our <br />
             <span class="accent">new chocolate</span> first!
           </h2>
-          <form>
+          <form class="form-modal">
             <input
               class="subscribe-input"
               type="email"
               name="user-email"
               placeholder="Enter your email"
             />
-            <button class="main-btn" type="submit">Subscribe</button>
+            <button class="main-btn submit-form-modal" type="submit">
+              Subscribe
+            </button>
           </form>
         </div>
+      </div>
+    </div>
+
+    <!----------- buy now modal ------------>
+    <div class="backdrop is-hidden" data-buy>
+      <div class="buy-window">
+        <button class="close-btn" data-buy-close>
+          <svg class="close-icon" width="20" height="20">
+            <use href="./images/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+        <div class="buy-now">
+          <h2 class="main-title"><span class="accent">Buy</span> now</h2>
+
+          <ul class="buy-list">
+            <li class="chocolate-item">
+              <img
+                class="chocolate-img"
+                src="./images/products/chocolate-bar-kinder.webp"
+                alt="chocolate"
+                width="120"
+                height="107"
+              />
+              <button class="weight-btn">100 g</button>
+            </li>
+            <li class="chocolate-item">
+              <img
+                class="chocolate-img"
+                src="./images/products/chocolate-white-milk.webp"
+                alt="chocolate white and milk"
+                width="120"
+                height="107"
+              />
+              <button class="weight-btn">200 g</button>
+            </li>
+            <li class="chocolate-item">
+              <img
+                class="chocolate-img"
+                src="./images/products/chocolate-bar.webp"
+                alt="chocolate"
+                width="120"
+                height="107"
+              />
+              <button class="weight-btn">300 g</button>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-buy">
+          <div>
+            <label class="buy-label" for="user-name"
+              >Personal information</label
+            >
+            <div class="info-input">
+              <input
+                class="review-input"
+                type="text"
+                name="user-name"
+                placeholder="Name"
+                id="user-name"
+              />
+              <input
+                class="review-input"
+                name="user-surname"
+                type="text"
+                placeholder="Surname"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="buy-label" for="user-email">Email</label>
+            <input
+              class="review-input"
+              type="email"
+              placeholder="Enter your email"
+              id="user-email"
+            />
+          </div>
+
+          <div>
+            <label class="buy-label" for="user-phone">Phone number</label>
+            <div class="input-thumb">
+              <input
+                class="review-input"
+                type="tel"
+                name="user-phone"
+                placeholder="Phone number"
+                id="user-phone"
+              />
+              <svg class="icon-flag" width="32" height="24">
+                <use href="./images/icons/icons.svg#icon-flag"></use>
+              </svg>
+              <p class="code-number">+380</p>
+            </div>
+          </div>
+
+          <div>
+            <label class="buy-label" for="user-card">Card number</label>
+            <div class="input-thumb-buy">
+              <input
+                class="review-input number-input"
+                type="text"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                name="user-card"
+                placeholder="Enter card"
+                id="user-card"
+              />
+              <svg class="icon-card" width="40" height="25">
+                <use href="./images/icons/icons.svg#icon-mastercard"></use>
+              </svg>
+            </div>
+          </div>
+          <label class="buy-label" for="user-comment">Comment</label>
+          <textarea
+            class="review-textarea review-input"
+            name="user-comment"
+            placeholder="Enter text"
+            id="user-comment"
+          ></textarea>
+          <button class="main-btn submit-form-buy" type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
@@ -864,7 +993,7 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     ></script>
-    <script src="./js/script-swiper.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script-swiper.js"></script>
   </body>
 </html>

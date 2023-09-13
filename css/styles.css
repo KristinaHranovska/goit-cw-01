@@ -1159,3 +1159,91 @@ img {
 }
 
 /* ================= END REVIEW MODAL SECTION ================= */
+
+/* ================= BUY NOW MODAL SECTION ================= */
+
+.buy-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 609px;
+    height: 628px;
+
+    border-radius: 15px;
+    background-color: var(--background-main-color);
+
+    padding: 48px;
+
+    overflow: auto;
+}
+
+.buy-window .close-icon {
+    fill: var(--color-black);
+}
+
+.buy-now .main-title {
+    margin-bottom: 32px;
+}
+
+.buy-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin-bottom: 40px;
+}
+
+.chocolate-item {
+    flex-basis: calc((100% - 32px) / 3);
+
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: var(--color-white);
+
+    padding: 24px 20px 18px 20px;
+    text-align: center;
+}
+
+.chocolate-img {
+    margin-bottom: 14px;
+}
+
+.weight-btn {
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: transparent;
+
+    color: var(--color-black);
+    font-weight: 600;
+    line-height: normal;
+
+    padding: 8px 27px;
+}
+
+.buy-label {
+    display: block;
+    color: var(--color-black);
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 8px;
+}
+
+.info-input {
+    display: flex;
+    gap: 21px;
+}
+
+.input-thumb-buy {
+    position: relative;
+}
+
+.icon-card {
+    position: absolute;
+    top: 23px;
+    right: 24px;
+}
+
+/* ================= END BUY NOW MODAL SECTION ================= */
