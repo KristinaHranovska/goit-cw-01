@@ -60,18 +60,24 @@ img {
     overflow: hidden;
 }
 
-/* .container {
-    width: 1158px;
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(46, 47, 66, 0.40);
 
-    margin-left: auto;
-    margin-right: auto;
-
-    padding: 0 32px;
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section {
-    padding: 64px 0;
-} */
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
 /* ================= END BASE ================= */
 
@@ -255,13 +261,23 @@ img {
     .hero-block {
         max-width: 330px;
         background-color: var(--background-color);
-        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/mobile/img-background-mobile.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/2x/mobile/img-background-mobile.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 30px;
 
         padding: 300px 20px 20px;
+    }
+
+    @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+        .hero-block {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/2x/mobile/img-background-mobile@2x.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+            background-color: var(--background-color);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
     }
 
     .hero-tittle {
@@ -302,12 +318,16 @@ img {
     }
 
     .main-btn-link {
-        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+
         border-radius: 100px;
         border: 1px solid var(--color-white);
         color: var(--color-white);
         font-weight: 600;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        padding: 12px 20px;
     }
 
     .main-btn-link:hover,
@@ -889,6 +909,16 @@ img {
         padding: 62px 0;
     }
 
+    @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+        .subscribe {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/2x/mobile/subcribe-background-mobile@2x.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
     .subscribe-container {
         text-align: center;
     }
@@ -931,7 +961,7 @@ img {
         left: 0;
 
         content: "";
-        width: 335px;
+        width: 100%;
         height: 1px;
         background-color: rgba(255, 255, 255, 0.10);
     }
@@ -998,308 +1028,291 @@ img {
     .footer-nav .nav-link:focus {
         color: var(--main-color);
     }
+
+    /* ================= END FOOTER SECTION ================= */
+
+    /* ================= BUY NOW MODAL SECTION ================= */
+
+    .buy-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        width: 311px;
+        height: 600px;
+
+        border-radius: 15px;
+        background-color: var(--background-main-color);
+
+        padding: 32px 24px;
+
+        overflow: auto;
+    }
+
+    .close-icon {
+        fill: var(--color-black);
+        width: 12px;
+        height: 12px;
+
+    }
+
+    .buy-now .main-title {
+        margin-bottom: 32px;
+    }
+
+    .buy-list {
+        margin-bottom: 40px;
+    }
+
+    .chocolate-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background-color: var(--color-white);
+
+        padding: 8px 16px;
+        text-align: center;
+
+        margin-bottom: 8px;
+    }
+
+    .weight-btn {
+        border-radius: 100px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background-color: transparent;
+
+        color: var(--color-black);
+        font-weight: 600;
+        line-height: normal;
+
+        padding: 6px 16px;
+    }
+
+    .buy-label {
+        display: block;
+        color: var(--color-black);
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+
+        margin-bottom: 8px;
+    }
+
+    .input-thumb-buy {
+        position: relative;
+    }
+
+    .icon-card {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        width: 32px;
+        height: 21px;
+    }
+
+    /* ================= END BUY NOW MODAL SECTION ================= */
+
+    /* ================= SUBSCRIBE MODAL SECTION ================= */
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 311px;
+
+        transform: translate(-50%, -50%) scale(1);
+
+        border-radius: 15px;
+
+        background-image: url(../images/mobile/modal/subscribe-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        background-color: var(--background-main-color);
+
+        overflow: hidden;
+
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+        .modal {
+            background-image: url(../images/2x/mobile/modal/subscribe-mobile@2x.jpg);
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        border: none;
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+    }
+
+    .modal .close-icon {
+        fill: var(--color-white);
+    }
+
+    .close-btn:hover .close-icon {
+        fill: var(--main-color);
+    }
+
+    .subscribe-form {
+        padding: 200px 24px 32px;
+    }
+
+    .subscribe-form .main-title {
+        text-align: start;
+        margin-bottom: 24px;
+    }
+
+    .form-modal {
+        position: relative;
+    }
+
+    .subscribe-input {
+        width: 100%;
+        padding: 14px 18px;
+
+        color: rgba(17, 17, 17, 0.7);
+        font-size: 12px;
+        line-height: normal;
+        letter-spacing: -0.02em;
+
+        border-radius: 30px;
+        border: 1.5px solid rgba(17, 17, 17, 0.1);
+        background-color: transparent;
+
+        outline: transparent;
+    }
+
+    .subscribe-input::placeholder {
+        color: rgba(64, 64, 64, 0.40);
+    }
+
+    .subscribe-input:focus {
+        border: 1.5px solid rgba(17, 17, 17, 0.5);
+    }
+
+    .form-modal .main-btn {
+        position: absolute;
+
+        top: 1px;
+        right: 0;
+
+        font-size: 12px;
+        padding: 14px 15px;
+    }
+
+    /* ================= END SUBSCRIBE MODAL SECTION ================= */
+
+    /* ================= REVIEW MODAL SECTION ================= */
+
+    .subscribe-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 311px;
+
+        transform: translate(-50%, -50%) scale(1);
+
+        border-radius: 15px;
+        background: var(--background-main-color);
+        padding: 32px 24px;
+    }
+
+    .subscribe-window .main-title {
+        text-align: start;
+
+        margin-bottom: 32px;
+    }
+
+    .review-input {
+        width: 100%;
+        background-color: transparent;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.1);
+        box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+
+        outline: transparent;
+
+        color: var(--color-black);
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: -0.03em;
+
+        padding: 14px 18px;
+        margin-bottom: 14px;
+    }
+
+    .review-input:focus {
+        border: 1.5px solid rgba(17, 17, 17, 0.5);
+    }
+
+    .review-input::placeholder {
+        color: rgba(64, 64, 64, 0.30);
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: -0.03em;
+    }
+
+    .input-thumb {
+        position: relative;
+    }
+
+    .icon-flag {
+        position: absolute;
+        top: 15px;
+        left: 18px;
+
+        width: 24px;
+        height: 18px;
+    }
+
+    .code-number {
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        color: var(--color-black);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.03em;
+    }
+
+    .input-thumb .review-input {
+        padding-left: 106px;
+    }
+
+    .review-textarea {
+        resize: none;
+        width: 100%;
+        height: 137px;
+
+        margin-bottom: 18px;
+    }
+
+    .input-thumb::after {
+        position: absolute;
+        top: 8px;
+        left: 95px;
+        display: block;
+        content: "";
+        width: 3px;
+        height: 30px;
+        background-color: rgba(17, 17, 17, 0.1);
+    }
+
+    .subscribe-window .main-btn {
+        padding: 14px 40px;
+    }
+
+    /* ================= END REVIEW MODAL SECTION ================= */
 }
-
-/* ================= FOOTER SECTION ================= */
-
-
-
-/* ================= END FOOTER SECTION ================= */
-
-/* ================= SUBSCRIBE MODAL SECTION ================= */
-/* .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: rgba(46, 47, 66, 0.40);
-
-    opacity: 1;
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 538px;
-    min-height: 412px;
-
-    transform: translate(-50%, -50%) scale(1);
-
-    border-radius: 15px;
-
-    background-image: url(../images/desktop/modal/subscribe.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    background-color: var(--background-main-color);
-
-    overflow: hidden;
-
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn {
-    position: absolute;
-    top: 28px;
-    right: 28px;
-    border: none;
-    background-color: transparent;
-    width: 28px;
-    height: 28px;
-}
-
-.close-icon {
-    fill: var(--color-white);
-}
-
-.close-btn:hover .close-icon {
-    fill: var(--main-color);
-}
-
-.subscribe-form {
-    padding-top: 236px;
-    padding-left: 40px;
-}
-
-.subscribe-form .main-title {
-    text-align: start;
-    margin-bottom: 28px;
-}
-
-.subscribe-input {
-    width: 313px;
-    padding: 14px 24px;
-
-    color: rgba(17, 17, 17, 0.7);
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: -0.02em;
-
-    border-radius: 30px;
-    border: 1.5px solid rgba(17, 17, 17, 0.1);
-    background-color: transparent;
-
-    outline: transparent;
-
-    margin-right: 8px;
-}
-
-.subscribe-input::placeholder {
-    color: rgba(64, 64, 64, 0.40);
-}
-
-.subscribe-input:focus {
-    border: 1.5px solid rgba(17, 17, 17, 0.5);
-}
-
-.main-btn {
-    padding: 17px 33px;
-} */
-
-/* ================= END SUBSCRIBE MODAL SECTION ================= */
-
-/* ================= REVIEW MODAL SECTION ================= */
-
-/* .subscribe-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 517px;
-    min-height: 628px;
-
-    transform: translate(-50%, -50%) scale(1);
-
-    border-radius: 15px;
-    background: var(--background-main-color);
-    padding: 40px;
-}
-
-.subscribe-window .close-icon {
-    fill: var(--color-black);
-}
-
-.subscribe-window .main-title {
-    text-align: start;
-
-    margin-bottom: 40px;
-}
-
-.review-input {
-    width: 100%;
-    background-color: transparent;
-    border-radius: 13px;
-    border: 1.5px solid rgba(17, 17, 17, 0.1);
-    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
-
-    outline: transparent;
-
-    color: var(--color-black);
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: -0.03em;
-
-    padding: 22px 24px;
-    margin-bottom: 18px;
-}
-
-.review-input:focus {
-    border: 1.5px solid rgba(17, 17, 17, 0.5);
-}
-
-.review-input::placeholder {
-    color: rgba(64, 64, 64, 0.30);
-    font-size: 18px;
-    line-height: normal;
-    letter-spacing: -0.03em;
-}
-
-.input-thumb {
-    position: relative;
-}
-
-.icon-flag {
-    position: absolute;
-    top: 21px;
-    left: 24px;
-}
-
-.code-number {
-    position: absolute;
-    top: 21px;
-    left: 70px;
-    color: var(--color-black);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.03em;
-}
-
-.input-thumb .review-input {
-    padding-left: 177px;
-}
-
-.review-textarea {
-    resize: none;
-    width: 100%;
-    height: 137px;
-
-    margin-bottom: 18px;
-}
-
-.input-thumb::after {
-    position: absolute;
-    top: 17px;
-    left: 145px;
-    display: block;
-    content: "";
-    width: 3px;
-    height: 30px;
-    background-color: rgba(17, 17, 17, 0.1);
-}
-
-.subscribe-window .main-btn {
-    padding: 14px 40px;
-} */
-
-/* ================= END REVIEW MODAL SECTION ================= */
-
-/* ================= BUY NOW MODAL SECTION ================= */
-
-/* .buy-window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    width: 609px;
-    height: 628px;
-
-    border-radius: 15px;
-    background-color: var(--background-main-color);
-
-    padding: 48px;
-
-    overflow: auto;
-}
-
-.buy-window .close-icon {
-    fill: var(--color-black);
-}
-
-.buy-now .main-title {
-    margin-bottom: 32px;
-}
-
-.buy-list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-
-    margin-bottom: 40px;
-}
-
-.chocolate-item {
-    flex-basis: calc((100% - 32px) / 3);
-
-    border-radius: 15px;
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    background-color: var(--color-white);
-
-    padding: 24px 20px 18px 20px;
-    text-align: center;
-}
-
-.chocolate-img {
-    margin-bottom: 14px;
-}
-
-.weight-btn {
-    border-radius: 100px;
-    border: 1px solid rgba(17, 17, 17, 0.10);
-    background-color: transparent;
-
-    color: var(--color-black);
-    font-weight: 600;
-    line-height: normal;
-
-    padding: 8px 27px;
-}
-
-.buy-label {
-    display: block;
-    color: var(--color-black);
-    font-weight: 500;
-    line-height: 1.28;
-    letter-spacing: -0.02em;
-
-    margin-bottom: 8px;
-}
-
-.info-input {
-    display: flex;
-    gap: 21px;
-}
-
-.input-thumb-buy {
-    position: relative;
-}
-
-.icon-card {
-    position: absolute;
-    top: 23px;
-    right: 24px;
-} */
-
-/* ================= END BUY NOW MODAL SECTION ================= */
