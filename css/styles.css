@@ -60,7 +60,7 @@ img {
     overflow: hidden;
 }
 
-.container {
+/* .container {
     width: 1158px;
 
     margin-left: auto;
@@ -71,11 +71,190 @@ img {
 
 .section {
     padding: 64px 0;
-}
+} */
 
 /* ================= END BASE ================= */
 
-/* ================= HEADER SECTION ================= */
+/* ================= MOBILE SECTION ================= */
+@media screen and (max-width: 767px) {
+    .section {
+        padding-bottom: 74px;
+    }
+
+    .container {
+        max-width: 375px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .up-btn {
+        display: none;
+    }
+
+    /* ================= HEADER SECTION ================= */
+    .header {
+        padding-top: 20px;
+        padding-bottom: 14px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .social-link {
+        display: none;
+    }
+
+    .head-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        color: var(--color-black);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.28;
+        letter-spacing: -0.03em;
+    }
+
+    .logo .icon {
+        margin-left: 5px;
+    }
+
+    .accent-logo {
+        font-style: italic;
+    }
+
+    .mobile-btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-burger {
+        stroke: var(--color-black);
+    }
+
+    .mobile-btn:focus .icon-burger {
+        stroke: var(--main-color);
+    }
+
+    .adaptive-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: var(--background-color);
+        overflow: hidden;
+
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
+
+    .adaptive-overlay.is-hidden {
+        transform: translateX(0);
+    }
+
+    .adaptive {
+        position: relative;
+        height: 100%;
+
+        padding: 0 15px;
+    }
+
+    .mobile-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+    }
+
+    .icon-close {
+        fill: var(--color-white);
+    }
+
+    .mobile-close-btn:hover .icon-close,
+    .mobile-close-btn:focus .icon-close {
+        fill: var(--main-color);
+    }
+
+    .nav-adaptive-list {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 136px;
+        margin-bottom: 260px;
+    }
+
+    .nav-adaptive-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .nav-adaptive-link {
+        position: relative;
+        color: var(--color-white);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+    }
+
+    .nav-adaptive-link:hover,
+    .nav-adaptive-link:focus {
+        color: var(--main-color);
+    }
+
+    .nav-adaptive-link:hover::after,
+    .nav-adaptive-link:focus::after {
+        position: absolute;
+        display: block;
+        bottom: -8px;
+        content: "";
+        width: 24px;
+        height: 1px;
+        background-color: var(--main-color);
+    }
+
+    .social-adaptive-link {
+        display: flex;
+        gap: 18px;
+    }
+
+    .icon-adaptive {
+        display: block;
+        stroke: var(--color-white);
+    }
+
+    .icon-adaptive:hover,
+    .icon-adaptive:focus {
+        stroke: var(--main-color);
+    }
+
+    /* ================= END HEADER SECTION ================= */
+
+    /* ================= HERO SECTION ================= */
+
+
+}
+
+/* 
 .header {
     padding-bottom: 8px;
 }
@@ -157,16 +336,15 @@ img {
 
 .social-link .icon:hover {
     stroke: var(--main-color);
-}
+} */
 
 /* ================= END HEADER SECTION ================= */
 
 /* ================= HERO SECTION ================= */
-
-.hero-block {
+/* .hero-block {
     max-width: 1136px;
     background-color: var(--background-color);
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/img-background.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/desktop/img-background.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -286,26 +464,28 @@ img {
 
 .scroll:hover .icon {
     fill: var(--hover-effect);
-}
+} */
 
 /* ================= END HERO SECTION ================= */
 
 /* ================= BENEFITS SECTION ================= */
 
 
-.benefits {
+/* .benefits {
     background-color: var(--background-color);
     padding: 50px 0;
 }
 
 .benefits-block {
     display: flex;
-    gap: 85px;
+    gap: 70px;
 }
 
 .benefit-item {
     position: relative;
-    flex-basis: calc((100% - 170px) / 3);
+    padding-right: 18px;
+
+    flex-basis: calc((100% - 140px) / 3);
 }
 
 .benefit-item .block-icon {
@@ -334,29 +514,30 @@ img {
 
 .benefit-text {
     color: var(--color-text-white);
-    line-height: normal;
+    line-height: 1.21;
     letter-spacing: -0.02em;
 }
 
 .benefit-item:not(:last-child)::before {
     position: absolute;
-    top: 50%;
-    left: 110%;
-
-    transform: translateY(-50%);
-    display: block;
     content: "";
+
+    top: 50%;
+    right: 0;
+    width: 124px;
+    height: 1px;
+
     background-color: rgba(255, 255, 255, 0.50);
 
-    width: 1px;
-    height: 124px;
-}
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: 100% 0;
+} */
 
 /* ================= END BENEFITS SECTION ================= */
 
 /* ================= TASTE SECTION ================= */
 
-.taste-discription {
+/* .taste-discription {
     max-width: 486px;
     text-align: center;
     margin-left: auto;
@@ -499,13 +680,13 @@ img {
     font-weight: 500;
     line-height: 1.28;
     letter-spacing: -0.02em;
-}
+} */
 
 /* ================= END TASTE SECTION ================= */
 
 /* ================= VIDEO SECTION ================= */
 
-.video-inner {
+/* .video-inner {
     display: flex;
     gap: 20px;
 }
@@ -570,12 +751,12 @@ img {
     position: absolute;
     top: 5px;
     left: 0;
-}
+} */
 
 /* ================= END VIDEO SECTION ================= */
 
 /* ================= PRODUSTS SECTION ================= */
-.btn-swiper {
+/* .btn-swiper {
     display: flex;
     justify-content: end;
     gap: 20px;
@@ -688,13 +869,13 @@ img {
     height: 13px;
     background-color: rgba(17, 17, 17, 0.10);
     transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ================= END PRODUSTS SECTION ================= */
 
 /* ================= TOP SECTION ================= */
 
-.top-list {
+/* .top-list {
     display: flex;
     gap: 16px;
 
@@ -714,13 +895,13 @@ img {
 .top-inner .main-text {
     max-width: 407px;
     margin-bottom: 0;
-}
+} */
 
 /* ================= END TOP SECTION ================= */
 
 /* ================= FEEDBACK SECTION ================= */
 
-.subscribe-section {
+/* .subscribe-section {
     padding-top: 64px;
 }
 
@@ -748,12 +929,10 @@ img {
 
 .feedback-image {
     position: absolute;
-    top: -40%;
+    top: 0;
     left: 50%;
 
-    transform: translate(-50%, 50%);
-
-    object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 
 .feedback-inner {
@@ -814,19 +993,19 @@ img {
 
 .feedback-thumb .feedback-slider-dots {
     margin-bottom: 50px;
-}
+} */
 
 /* ================= END FEEDBACK SECTION ================= */
 
 /* ================= SUBSCRIBE SECTION ================= */
 
-.subscribe {
+/* .subscribe {
     display: flex;
     justify-content: center;
 
     width: 100%;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/subcribe-background.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/desktop/subcribe-background.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -855,11 +1034,11 @@ img {
     color: var(--color-white);
 
     margin-bottom: 24px;
-}
+} */
 
 /* ================= END SUBSCRIBE SECTION ================= */
 
-.up-btn {
+/* .up-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -887,11 +1066,11 @@ img {
 .up-btn.show {
     opacity: 1;
     visibility: visible;
-}
+} */
 
 /* ================= FOOTER SECTION ================= */
 
-.footer-block {
+/* .footer-block {
     background-color: var(--background-color);
     padding: 50px 0;
 }
@@ -968,12 +1147,12 @@ img {
 .footer-nav .nav-link:hover,
 .footer-nav .nav-link:focus {
     color: var(--main-color);
-}
+} */
 
 /* ================= END FOOTER SECTION ================= */
 
 /* ================= SUBSCRIBE MODAL SECTION ================= */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -1004,7 +1183,7 @@ img {
 
     border-radius: 15px;
 
-    background-image: url(../images/modal/subscribe.jpg);
+    background-image: url(../images/desktop/modal/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -1073,13 +1252,13 @@ img {
 
 .main-btn {
     padding: 17px 33px;
-}
+} */
 
 /* ================= END SUBSCRIBE MODAL SECTION ================= */
 
 /* ================= REVIEW MODAL SECTION ================= */
 
-.subscribe-window {
+/* .subscribe-window {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1178,13 +1357,13 @@ img {
 
 .subscribe-window .main-btn {
     padding: 14px 40px;
-}
+} */
 
 /* ================= END REVIEW MODAL SECTION ================= */
 
 /* ================= BUY NOW MODAL SECTION ================= */
 
-.buy-window {
+/* .buy-window {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1266,6 +1445,6 @@ img {
     position: absolute;
     top: 23px;
     right: 24px;
-}
+} */
 
 /* ================= END BUY NOW MODAL SECTION ================= */

@@ -53,4 +53,8 @@
 <path fill="#ff5e00" style="fill: var(--color3, #ff5e00)" d="M25.6 26.935c3.148-2.701 5.144-6.72 5.144-11.208s-1.996-8.507-5.144-11.208c-3.148 2.701-5.144 6.72-5.144 11.208s1.996 8.507 5.144 11.208z"></path>
 </symbol>
 
+<symbol id="icon-menu" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M4 16h24M4 8h24M4 24h24"></path>
+</symbol>
+
 </defs></svg>
