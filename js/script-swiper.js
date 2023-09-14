@@ -17,9 +17,9 @@ $(document).ready(function () {
           autoplaySpeed: 3000, // Інтервал автопрокрутки у мілісекундах (1 секунда = 1000 мілісекунд)
           responsive: [
             {
-              breakpoint: 768,
+              breakpoint: 767,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
               },
             },
             {
@@ -60,7 +60,7 @@ $(document).ready(function () {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
               },
             },
             {

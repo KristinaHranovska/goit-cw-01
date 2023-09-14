@@ -137,3 +137,16 @@
     refs.burger.classList.toggle("is-hidden");
   }
 })();
+
+
+// для переміщення тексту у секції Top Sellers (тільки для розширення до 768px)
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    const topList = document.querySelector('.top-list');
+    const topText = document.querySelector('.top-text');
+    const liElement = document.createElement('li');
+    liElement.className = 'top-item';
+    liElement.appendChild(topText);
+    topList.insertBefore(liElement, topList.firstElementChild.nextSibling);
+  }
+});
