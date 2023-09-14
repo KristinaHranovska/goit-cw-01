@@ -160,6 +160,7 @@ img {
         height: 100%;
         background-color: var(--background-color);
         overflow: hidden;
+        z-index: 1;
 
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
@@ -251,7 +252,135 @@ img {
 
     /* ================= HERO SECTION ================= */
 
+    .hero-block {
+        max-width: 330px;
+        background-color: var(--background-color);
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/mobile/img-background-mobile.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
 
+        padding: 300px 20px 20px;
+    }
+
+    .hero-tittle {
+        color: var(--color-text-white);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        padding-bottom: 32px;
+    }
+
+    .bth-block {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+
+        margin-bottom: 32px;
+    }
+
+    .main-btn {
+        border-radius: 100px;
+        background: var(--main-color);
+        padding: 12px 20px;
+        border: none;
+        font-weight: 600;
+        line-height: normal;
+
+        color: var(--color-white);
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    .main-btn:hover,
+    .main-btn:focus {
+        background-color: var(--hover-effect);
+        color: var(--main-color);
+    }
+
+    .main-btn-link {
+        padding: 12px 20px;
+        border-radius: 100px;
+        border: 1px solid var(--color-white);
+        color: var(--color-white);
+        font-weight: 600;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .main-btn-link:hover,
+    .main-btn-link:focus {
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+    }
+
+    .scroll {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-white);
+        font-weight: 500;
+        line-height: 1.28;
+        letter-spacing: -0.03em;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .block-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: var(--background-main-color);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+
+        margin-left: 14px;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .hero-block .block-icon {
+        animation: bounce 2s infinite reverse;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .block-icon .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .scroll .icon {
+        fill: var(--main-color);
+    }
+
+    .scroll:hover {
+        color: var(--main-color);
+    }
+
+    .scroll:hover .block-icon {
+        background-color: var(--main-color);
+    }
+
+    .scroll:hover .icon {
+        fill: var(--hover-effect);
+    }
 }
 
 /* 
