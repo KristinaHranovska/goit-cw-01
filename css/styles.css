@@ -248,6 +248,7 @@ img {
     .icon-adaptive {
         display: block;
         stroke: var(--color-white);
+        fill: none;
     }
 
     .icon-adaptive:hover,
@@ -268,7 +269,7 @@ img {
         background-position: center;
         border-radius: 30px;
 
-        padding: 300px 20px 20px;
+        padding: 395px 20px 20px;
     }
 
     @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
@@ -816,7 +817,7 @@ img {
 
     .feedback-item {
         padding-top: 45px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .feedback-card {
@@ -838,7 +839,7 @@ img {
 
     .feedback-inner {
         text-align: center;
-        padding: 56px 24px 26px;
+        padding: 56px 20px 20px;
     }
 
     .feedback-title {
@@ -1045,15 +1046,15 @@ img {
         border-radius: 15px;
         background-color: var(--background-main-color);
 
-        padding: 32px 24px;
+        padding: 48px 24px 24px;
 
         overflow: auto;
     }
 
     .close-icon {
         fill: var(--color-black);
-        width: 12px;
-        height: 12px;
+        width: 20px;
+        height: 20px;
 
     }
 
@@ -1323,14 +1324,547 @@ img {
 
 /* ================= TABLET SECTION ================= */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .section {
+        padding-bottom: 100px;
+    }
+
+    .container {
+        max-width: 768px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .up-btn {
+        display: none;
+    }
+
+    /* ================= HEADER SECTION ================= */
+    .header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .adaptive {
+        padding: 0 83px;
+    }
+
+    .mobile-close-btn {
+        top: 24px;
+        right: 32px;
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-adaptive-list {
+        padding-top: 156px;
+        margin-bottom: 440px;
+    }
+
+    /* ================= END HEADER SECTION ================= */
+
+    /* ================= HERO SECTION ================= */
+    .hero-block {
+        max-width: 704px;
+        background-color: var(--background-color);
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/tablet/img-background-tablet.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+
+        padding: 671px 40px 40px;
+    }
+
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+        .hero-block {
+            background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../images/2x/tablet/img-background-tablet@2x.jpg), lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+            background-color: var(--background-color);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .hero-tittle {
+        width: 484px;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+
+    .hero-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bth-block {
+        margin-bottom: 0;
+    }
+
+    .main-btn {
+        padding: 14px 40px;
+    }
+
+    .main-btn-link {
+        padding: 14px 40px;
+    }
+
+    /* ================= END HERO SECTION ================= */
+
+    /* ================= BENEFITS SECTION ================= */
+
+    .benefits-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        row-gap: 30px;
+    }
+
+    .benefit-item {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    .benefit-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    /* ================= END BENEFITS SECTION ================= */
+
+    /* ================= TASTE SECTION ================= */
+
+    .main-title {
+        font-size: 24px;
+
+        margin-bottom: 50px;
+    }
+
+    .accent {
+        color: var(--main-color);
+    }
+
+    .text-thumb {
+        width: 486px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-text {
+        margin-bottom: 50px;
+    }
+
+    .taste-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .taste-item {
+        flex-basis: calc((100% - 32px) / 2);
+        margin-bottom: 0;
+    }
+
+    .first-item {
+        order: 1;
+    }
+
+    .second-item {
+        order: 3;
+    }
+
+    .third-item {
+        order: 4;
+    }
+
+    .fours-item {
+        order: 2;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    .overlay-text {
+        font-size: 14px;
+    }
+
+    /* ================= END TASTE SECTION ================= */
+
+    /* ================= VIDEO SECTION ================= */
+
+    .title-thumb {
+        margin-bottom: 50px;
+    }
+
+    .icon-play {
+        width: 44px;
+        height: 44px;
+    }
+
+    .video-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .video-content {
+        width: 614px;
+        padding: 32px;
+    }
+
+    .video-text {
+        width: 350px;
+    }
+
+    .video-item:not(:last-child) {
+        margin-bottom: 18px;
+    }
+
+    /* ================= END VIDEO SECTION ================= */
+
+    /* ================= PRODUSTS SECTION ================= */
+    .products-list {
+        margin-bottom: 32px;
+    }
+
+    .product-item {
+        padding: 32px 20px;
+        margin-right: 18px;
+    }
+
+    .product-name {
+        font-size: 18px;
+    }
+
+    /* ================= END PRODUSTS SECTION ================= */
+
+    /* ================= TOP SECTION ================= */
+    .top-list {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .top-image {
+        margin-bottom: 0;
+    }
+
+    .top-text {
+        width: 306px;
+        margin-bottom: 0;
+        text-align: start;
+    }
+
+    .top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-inner .main-btn {
+        padding: 14px 40px;
+    }
+
+    /* ================= END TOP SECTION ================= */
+
+    /* ================= FEEDBACK SECTION ================= */
+
+    .feedback-item {
+        margin-right: 16px;
+        margin-bottom: 20px;
+    }
+
+    .feedback-inner {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /* ================= END FEEDBACK SECTION ================= */
+
+    /* ================= SUBSCRIBE SECTION ================= */
+
+    .subscribe {
+        width: 100%;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/tablet/subcribe-background-tablet.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        padding: 72px 0;
+    }
+
+    @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+        .subscribe {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(../images/2x/tablet/subcribe-background-tablet@2x.jpg), lightgray 0px -481.157px / 100% 375.122% no-repeat;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .subscribe-title {
+        font-size: 24px;
+    }
+
+    .subscribe-container .main-text {
+        margin-right: auto;
+        margin-left: auto;
+        width: 467px;
+    }
+
+    /* ================= END SUBSCRIBE SECTION ================= */
+
+    /* ================= FOOTER SECTION ================= */
+    .footer-block {
+        padding: 50px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 63px;
+
+        margin-bottom: 86px;
+    }
+
+    .footer-container::after {
+        position: absolute;
+        bottom: -62px;
+        left: 0;
+
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+
+    .footer-title {
+        font-size: 28px;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .footer-contact {
+        gap: 64px;
+    }
+
+    .footer-icon-link {
+        gap: 24px;
+    }
+
+    .footer-nav {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-nav .nav-item {
+        margin-bottom: 0;
+    }
+
+    .footer-nav .nav-link:hover,
+    .footer-nav .nav-link:focus {
+        color: var(--main-color);
+    }
+
+    /* ================= END FOOTER SECTION ================= */
+
+    /* ================= BUY NOW MODAL SECTION ================= */
+
+    .buy-window {
+        width: 609px;
+        height: 628px;
+    }
+
+    .buy-window .close-icon {
+        fill: var(--color-black);
+    }
+
+    .buy-list {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .chocolate-item {
+        display: block;
+        flex-basis: calc((100% - 32px) / 3);
+        padding: 24px 20px 18px 20px;
+
+        margin-bottom: 0;
+    }
+
+    .chocolate-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 14px;
+    }
+
+    .weight-btn {
+        padding: 8px 27px;
+    }
+
+    .buy-label {
+        font-size: 14px;
+    }
+
+    .info-input {
+        display: flex;
+        gap: 21px;
+    }
+
+    .input-thumb-buy {
+        position: relative;
+    }
+
+    .icon-card {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+
+        width: 44px;
+        height: 30px;
+    }
+
+    .form-buy .main-btn {
+        padding: 14px 40px;
+    }
+
+    /* ================= END BUY NOW MODAL SECTION ================= */
+
+    /* ================= SUBSCRIBE MODAL SECTION ================= */
+
+    .modal {
+        width: 538px;
+
+        background-image: url(../images/tablet/modal/subscribe-tablet.jpg);
+    }
+
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+        .modal {
+            background-image: url(../images/2x/tablet/modal/subscribe-tablet@2x.jpg);
+        }
+    }
+
+    .close-btn {
+        top: 28px;
+        right: 28px;
+
+        width: 28px;
+        height: 28px;
+    }
+
+    .subscribe-form {
+        padding-top: 236px;
+        padding-left: 40px;
+    }
+
+    .subscribe-input {
+        width: 313px;
+        padding: 14px 24px;
+
+        color: rgba(17, 17, 17, 0.7);
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: -0.02em;
+
+        border-radius: 30px;
+        border: 1.5px solid rgba(17, 17, 17, 0.1);
+        background-color: transparent;
+
+        outline: transparent;
+
+        margin-right: 8px;
+    }
+
+    .subscribe-input::placeholder {
+        color: rgba(64, 64, 64, 0.40);
+    }
+
+    .subscribe-input:focus {
+        border: 1.5px solid rgba(17, 17, 17, 0.5);
+    }
+
+    .form-modal .main-btn {
+        padding: 17px 32px;
+        font-size: 14px;
+    }
+
+    /* ================= END SUBSCRIBE MODAL SECTION ================= */
+
+    /* ================= REVIEW MODAL SECTION ================= */
+
+    .subscribe-window {
+        width: 517px;
+        min-height: 628px;
+
+        padding: 40px;
+    }
+
+    .subscribe-window .main-title {
+        width: 300px;
+    }
+
+    .review-input {
+        font-size: 18px;
+
+        padding: 22px 24px;
+        margin-bottom: 18px;
+    }
+
+    .review-input::placeholder {
+        color: rgba(64, 64, 64, 0.30);
+        font-size: 18px;
+        line-height: normal;
+        letter-spacing: -0.03em;
+    }
+
+    .icon-flag {
+        top: 17px;
+        left: 24px;
+
+        width: 32px;
+        height: 32px;
+    }
+
+    .code-number {
+        top: 22px;
+        left: 70px;
+        font-size: 18px;
+    }
+
+    .input-thumb .review-input {
+        padding-left: 177px;
+    }
+
+    .input-thumb::after {
+        top: 17px;
+        left: 145px;
+    }
+
+    /* ================= END REVIEW MODAL SECTION ================= */
+
+}
 
 /* ================= END TABLET SECTION ================= */
 
 
 /* ================= LAPTOP SECTION ================= */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .section {
         padding-bottom: 64px;
     }
@@ -1740,6 +2274,7 @@ img {
         transition: transform 250ms ease-in-out;
 
         padding: 20px;
+        overflow: auto;
     }
 
     .taste-item:nth-child(odd) .overlay {
@@ -1776,7 +2311,7 @@ img {
         line-height: 1.2;
 
         border: none;
-        margin-right: 6px;
+        margin-bottom: 2px;
     }
 
     .overlay-btn-white {
@@ -1840,6 +2375,8 @@ img {
     }
 
     .video-text {
+        width: 350px;
+
         color: var(--color-black);
 
         font-size: 18px;
@@ -2274,6 +2811,7 @@ img {
     }
 
     .footer-contact .icon-footer {
+        fill: none;
         stroke: var(--background-main-color);
     }
 
@@ -2416,9 +2954,6 @@ img {
     @media screen and (min-width: 1024px) and (min-resolution: 192dpi) {
         .modal {
             background-image: url(../images/2x/desktop/modal/subscribe-desktop@2x.jpg);
-            background-size: contain;
-            background-position: top;
-            background-color: var(--background-main-color);
         }
     }
 

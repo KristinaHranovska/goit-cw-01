@@ -139,9 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 
-// для переміщення тексту у секції Top Sellers (тільки для розширення до 768px)
+// для переміщення тексту у секції Top Sellers (тільки для розширення до 767px)
   document.addEventListener('DOMContentLoaded', function () {
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 767px)").matches) {
       const topList = document.querySelector('.top-list');
       const topText = document.querySelector('.top-text');
       const liElement = document.createElement('li');
