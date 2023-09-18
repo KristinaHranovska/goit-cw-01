@@ -1866,6 +1866,7 @@ img {
 
 @media screen and (min-width: 1024px) {
     .section {
+        position: relative;
         padding-bottom: 64px;
     }
 
@@ -1890,8 +1891,23 @@ img {
     }
 
     .header {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+
         padding-bottom: 8px;
     }
+
+    /* style for header-scroll */
+    .js-no-transparency {
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: ease;
+        background-color: rgba(254, 182, 51, 0.7);
+        backdrop-filter: blur(10px);
+    }
+
 
     .head-block {
         display: flex;
@@ -1976,6 +1992,10 @@ img {
     /* ================= END HEADER SECTION ================= */
 
     /* ================= HERO SECTION ================= */
+    .content-container {
+        padding-top: 80px;
+    }
+
     .hero-block {
         max-width: 1136px;
 
