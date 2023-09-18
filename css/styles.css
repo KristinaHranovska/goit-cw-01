@@ -1236,7 +1236,7 @@ img {
         margin-bottom: 32px;
     }
 
-    .review-input {
+    .main-input {
         width: 100%;
         background-color: transparent;
         border-radius: 13px;
@@ -1254,11 +1254,11 @@ img {
         margin-bottom: 14px;
     }
 
-    .review-input:focus {
+    .main-input:focus {
         border: 1.5px solid rgba(17, 17, 17, 0.5);
     }
 
-    .review-input::placeholder {
+    .main-input::placeholder {
         color: rgba(64, 64, 64, 0.30);
         font-size: 14px;
         line-height: normal;
@@ -1289,11 +1289,11 @@ img {
         letter-spacing: -0.03em;
     }
 
-    .input-thumb .review-input {
+    .input-thumb .main-input {
         padding-left: 106px;
     }
 
-    .review-textarea {
+    .main-textarea {
         resize: none;
         width: 100%;
         height: 137px;
@@ -1818,14 +1818,14 @@ img {
         width: 300px;
     }
 
-    .review-input {
+    .main-input {
         font-size: 18px;
 
         padding: 22px 24px;
         margin-bottom: 18px;
     }
 
-    .review-input::placeholder {
+    .main-input::placeholder {
         color: rgba(64, 64, 64, 0.30);
         font-size: 18px;
         line-height: normal;
@@ -1846,7 +1846,7 @@ img {
         font-size: 18px;
     }
 
-    .input-thumb .review-input {
+    .input-thumb .main-input {
         padding-left: 177px;
     }
 
@@ -3063,7 +3063,7 @@ img {
         margin-bottom: 40px;
     }
 
-    .review-input {
+    .main-input {
         width: 100%;
         background-color: transparent;
         border-radius: 13px;
@@ -3081,11 +3081,11 @@ img {
         margin-bottom: 18px;
     }
 
-    .review-input:focus {
+    .main-input:focus {
         border: 1.5px solid rgba(17, 17, 17, 0.5);
     }
 
-    .review-input::placeholder {
+    .main-input::placeholder {
         color: rgba(64, 64, 64, 0.30);
         font-size: 18px;
         line-height: normal;
@@ -3113,11 +3113,11 @@ img {
         letter-spacing: -0.03em;
     }
 
-    .input-thumb .review-input {
+    .input-thumb .main-input {
         padding-left: 177px;
     }
 
-    .review-textarea {
+    .main-textarea {
         resize: none;
         width: 100%;
         height: 137px;
