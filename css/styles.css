@@ -2783,6 +2783,24 @@ img {
         visibility: visible;
     }
 
+    .up-btn .icon-arrow-up {
+        animation: bounce 2s infinite reverse;
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-50%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
 
     /* ================= FOOTER SECTION ================= */
 
@@ -2890,8 +2908,10 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
+        width: 100%;
         width: 609px;
-        height: 628px;
+        height: 95%;
+        max-height: 1058px;
 
         border-radius: 15px;
         background-color: var(--background-main-color);
