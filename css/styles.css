@@ -1867,7 +1867,7 @@ img {
 @media screen and (min-width: 1024px) {
     .section {
         position: relative;
-        padding-bottom: 64px;
+        padding-top: 100px;
     }
 
     .container {
@@ -1955,6 +1955,7 @@ img {
     }
 
     .nav-link {
+        position: relative;
         display: inline-block;
 
         color: var(--color-black);
@@ -1967,9 +1968,34 @@ img {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .nav-link:hover,
-    .nav-link:focus {
+    .nav-link::after {
+        content: "";
+        display: block;
+        background-color: var(--main-color);
+        width: 0;
+        height: 1px;
+        transition: color .3s, width .3s;
+
+        margin-top: 10px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link:focus::after {
         color: var(--main-color);
+        width: 50%;
+    }
+
+    .nav-link:hover, .nav-link:focus {
+        color: var(--main-color);
+    }
+
+    .nav-link_active {
+        color: var(--main-color);
+        transition: color .3s, width .3s;
+    }
+
+    .nav-link_active::after {
+        width: 50%;
     }
 
     .social-link {

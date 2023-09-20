@@ -30,7 +30,7 @@
     <header class="header">
       <div class="container">
         <div class="head-block">
-          <nav class="site-nav" id="home">
+          <nav class="site-nav">
             <a class="logo" href="./index.html">
               <span class="accent-logo">Simply</span> chocolate
               <svg class="icon" width="24" height="24">
@@ -39,7 +39,7 @@
             </a>
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link nav-link_active" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#video-section">How it’s made?</a>
@@ -128,7 +128,7 @@
 
     <main>
       <!-- Hero section -->
-      <section class="section">
+      <section class="" id="home">
         <div class="content-container">
           <div class="container hero-block">
             <h1 class="hero-tittle">
@@ -428,10 +428,10 @@
       </section>
 
       <!-- Video -->
-      <section class="section">
+      <section class="section" id="video-section">
         <div class="container">
           <div class="title-thumb">
-            <h2 class="main-title" id="video-section">
+            <h2 class="main-title">
               How it's <span class="accent">made?</span>
             </h2>
           </div>
@@ -520,11 +520,9 @@
       </section>
 
       <!-- Our products section -->
-      <section class="section">
+      <section class="section" id="products">
         <div class="container">
-          <h2 class="main-title" id="products">
-            Our <span class="accent">products</span>
-          </h2>
+          <h2 class="main-title">Our <span class="accent">products</span></h2>
           <div class="swiper-container">
             <div class="btn-swiper">
               <button class="arrow-btn swiper-button-prev">
@@ -692,11 +690,9 @@
       </section>
 
       <!-- Top Sellers -->
-      <section class="section">
+      <section class="section" id="top">
         <div class="container">
-          <h2 class="main-title" id="top">
-            <span class="accent">Top</span> Sellers
-          </h2>
+          <h2 class="main-title"><span class="accent">Top</span> Sellers</h2>
           <ul class="top-list">
             <li class="top-item">
               <picture>
@@ -796,10 +792,10 @@
       </section>
 
       <!-- Chocolate is loved -->
-      <section class="section">
+      <section class="section" id="feedback">
         <div class="container">
           <div class="feedback-thumb">
-            <h2 class="main-title" id="feedback">
+            <h2 class="main-title">
               <span class="accent">Chocolate</span> is loved
             </h2>
             <div class="swiper-container">
@@ -1065,24 +1061,30 @@
           <span class="accent">our chocolate</span>
         </h2>
         <form class="form-review" name="review">
+          <label for="user-name" class="visually-hidden"></label>
           <input
             class="main-input"
             type="text"
             name="user-name"
             placeholder="Name"
+            id="user-name"
           />
+          <label for="user-email" class="visually-hidden"></label>
           <input
             class="main-input"
             type="email"
             name="user-email"
             placeholder="Email"
+            id="user-email"
           />
           <div class="input-thumb">
+            <label for="user-phone" class="visually-hidden"></label>
             <input
               class="main-input"
               type="tel"
               name="user-phone"
               placeholder="Phone number"
+              id="user-phone"
             />
             <svg class="icon-flag" width="32" height="24">
               <use href="./images/icons/icons.svg#icon-flag"></use>
@@ -1117,11 +1119,13 @@
             <span class="accent">new chocolate</span> first!
           </h2>
           <form class="form-modal" name="subscribe">
+            <label for="subscribe" class="visually-hidden"></label>
             <input
               class="subscribe-input"
               type="email"
               name="user-email"
               placeholder="Enter your email"
+              id="subscribe"
             />
             <button class="main-btn submit-form-modal" type="submit">
               Subscribe
@@ -1250,7 +1254,7 @@
 
         <form class="form-buy" name="buy-now">
           <div>
-            <label class="buy-label" for="user-name"
+            <label class="buy-label" for="user-buy-name"
               >Personal information</label
             >
             <div class="info-input">
@@ -1259,7 +1263,7 @@
                 type="text"
                 name="user-name"
                 placeholder="Name"
-                id="user-name"
+                id="user-buy-name"
               />
               <input
                 class="main-input"
@@ -1271,24 +1275,24 @@
           </div>
 
           <div>
-            <label class="buy-label" for="user-email">Email</label>
+            <label class="buy-label" for="user-buy-email">Email</label>
             <input
               class="main-input"
               type="email"
               placeholder="Enter your email"
-              id="user-email"
+              id="user-buy-email"
             />
           </div>
 
           <div>
-            <label class="buy-label" for="user-phone">Phone number</label>
+            <label class="buy-label" for="user-buy-phone">Phone number</label>
             <div class="input-thumb">
               <input
                 class="main-input"
                 type="tel"
                 name="user-phone"
                 placeholder="Phone number"
-                id="user-phone"
+                id="user-buy-phone"
               />
               <svg class="icon-flag" width="32" height="24">
                 <use href="./images/icons/icons.svg#icon-flag"></use>

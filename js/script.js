@@ -166,3 +166,23 @@ function changeHeaderBackground() {
     header.classList.remove('js-no-transparency');
   }
 }
+
+function activateNavLink() {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    $('section').each(function () {
+      var top = $(this).offset().top - 100;
+      var bottom = top + $(this).outerHeight();
+      var id = $(this).attr('id');
+      if (scroll >= top && scroll <= bottom) {
+        $('nav a.nav-link_active').removeClass('nav-link_active');
+        $('nav a[href="#' + id + '"]').addClass('nav-link_active');
+      }
+    });
+  });
+}
+
+$(document).ready(function() {
+  activateNavLink();
+});
+
