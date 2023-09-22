@@ -1,9 +1,6 @@
 # Simply Chocolate
 
-![Simply Chocolate Logo] <a class="logo" href="./index.html">
-<span class="accent-logo">Simply</span> chocolate
-<svg class="icon" width="24" height="24">
-<use href="./images/icons/icons.svg#chocolate"></use> </svg> </a>
+![Simply Chocolate Logo] (./images/icons/chocolate.svg)
 
 Цей проект - інтернет-магазин, присвячений шоколаду. Ви дізнаєтеся як
 виробляється шоколад, з чого його виготовляють і зможете ознайомитися з
