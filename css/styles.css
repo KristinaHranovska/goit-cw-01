@@ -1867,7 +1867,7 @@ img {
 @media screen and (min-width: 1024px) {
     .section {
         position: relative;
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .container {
@@ -2018,10 +2018,6 @@ img {
     /* ================= END HEADER SECTION ================= */
 
     /* ================= HERO SECTION ================= */
-    .content-container {
-        padding-top: 80px;
-    }
-
     .hero-block {
         max-width: 1136px;
 
