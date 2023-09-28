@@ -181,6 +181,10 @@ img {
         position: relative;
         height: 100%;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         padding: 0 15px;
     }
 
@@ -209,7 +213,6 @@ img {
         flex-direction: column;
 
         padding-top: 136px;
-        margin-bottom: 460px;
     }
 
     .nav-adaptive-item:not(:last-child) {
@@ -243,6 +246,7 @@ img {
     .social-adaptive-link {
         display: flex;
         gap: 18px;
+        padding-bottom: 15px;
     }
 
     .icon-adaptive {
@@ -1368,7 +1372,6 @@ img {
 
     .nav-adaptive-list {
         padding-top: 156px;
-        margin-bottom: 440px;
     }
 
     /* ================= END HEADER SECTION ================= */
